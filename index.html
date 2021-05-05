@@ -418,8 +418,33 @@
               <use href="./images/sprite.svg#icon-vector"></use>
             </svg>
           </button>
+          <h2 class="form-title" >Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form-order" name="order" autocomplete="on" novalidate>
+            <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" autofocus />
+            </div>
+            <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="phone_number" id="tel" />
+            </div>
+            <div class="form-field">
+            <label class="form-label" for="email">Почта</label>
+            <input class="form-input" type="email" name="email" id="email" />
+            </div>
+            <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea class="form-input comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
+            </div>
+            <label class="policy">
+              <input type="checkbox" name="policy" value=""/>
+              Соглашаюсь с рассылкой и принимаю Условия договора
+            </label>
+            <button class="form-button" type="submit">Отправить</button>
+
         </div>
     </div>
+
   <script src="./js/modal.js"></script>
   
   </body>
