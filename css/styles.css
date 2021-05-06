@@ -685,6 +685,8 @@ img {
   fill: black;
 }
 
+/* form */
+
 .form-title {
   margin-bottom: 12px;
   font-size: 20px;
@@ -693,17 +695,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.form-field {
+.form {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+.client-info {
+  position: relative;
 }
 
 .form-label {
@@ -714,17 +713,36 @@ img {
 }
 
 .form-input {
-  margin: 0;
-  padding: 14px;
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  margin-bottom: 10px;
   margin-top: 4px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
+.form-icon {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+
+.form-input:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+}
+
 .comment {
   resize: none;
-  margin-bottom: 20px;
+  height: 120px;
+  padding: 12px 16px;
+}
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .policy {
@@ -734,19 +752,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.policy input {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  margin-left: 12px;
+
+.agreement {
+  color: var(--accent-color);
 }
 
 .form-button {
   margin-top: 30px;
   width: 200px;
-  height: 60px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -755,5 +773,6 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 }

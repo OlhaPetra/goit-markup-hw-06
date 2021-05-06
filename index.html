@@ -420,29 +420,43 @@
           </button>
           <h2 class="form-title" >Оставьте свои данные, мы вам перезвоним</h2>
           <form class="form-order" name="order" autocomplete="on" novalidate>
-            <div class="form-field">
-            <label class="form-label" for="name">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" autofocus />
+            <div class="form">
+              
+            <label class="form-label ">
+            Имя
+            <div class="client-info">
+            <input class="form-input" type="text" name="name" placeholder=" " autofocus />
+            <svg class="form-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-person-black"></use>
+            </svg>            
+          </div>        
+        </label>
+              <label class="form-label">Телефон
+                <div class="client-info">
+            <input class="form-input" type="tel" name="phone_number" placeholder=" "/> 
+              <svg class="form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+              </div>
+            </label>
+            <label class="form-label ">Почта
+              <div class="client-info">
+            <input class="form-input" type="email" name="email" placeholder=" " />
+            <svg class="form-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black"></use>
+            </svg>
             </div>
-            <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="phone_number" id="tel" />
-            </div>
-            <div class="form-field">
-            <label class="form-label" for="email">Почта</label>
-            <input class="form-input" type="email" name="email" id="email" />
-            </div>
-            <div class="form-field">
-            <label class="form-label" for="comment">Комментарий</label>
-            <textarea class="form-input comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
-            </div>
+            </label>
+            <label class="form-label">Комментарий
+            <textarea class="form-input comment" name="comment" placeholder="Введите текст"></textarea>
+            </label>
             <label class="policy">
               <input type="checkbox" name="policy" value=""/>
-              Соглашаюсь с рассылкой и принимаю Условия договора
+              Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#" target="_blank" rel="noopener norefferre">Условия договора</a>
             </label>
             <button class="form-button" type="submit">Отправить</button>
-
-        </div>
+            </div>
+            </form>
     </div>
 
   <script src="./js/modal.js"></script>
