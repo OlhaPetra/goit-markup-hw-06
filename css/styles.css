@@ -788,8 +788,8 @@ img {
   border-color: var(--accent-color);
 }
 
-.form-input:focus .form-icon {
-  stroke: var(--accent-color);
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-label::before {
