@@ -564,6 +564,13 @@ img {
   transition: border-color var(--animation);
 }
 
+.sign-input:-webkit-autofill,
+.sign-input:-webkit-autofill:hover,
+.sign-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--dark-bcg-text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--footer-bcg) inset;
+}
+
 .sign-input:focus {
   border-color: var(--accent-color);
 }
@@ -793,6 +800,13 @@ img {
   outline: none;
 
   transition: border-color var(--animation);
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--primary-title-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--primary-bcg-color) inset;
 }
 
 .form-input:not(:last-child) {
