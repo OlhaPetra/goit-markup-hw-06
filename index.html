@@ -374,7 +374,7 @@
         </address>
         </div>
 <div class="footer-social">
-<h3 class="company-social">Присоединяйтесь:</h3>
+<h3 class="company-social">Присоединяйтесь</h3>
 <ul class="list footer-social-list">
   <li class="footer-social-item">
     <a class="footer-social-link" href="#" target="_blank" rel="noopener norefferre">
@@ -383,8 +383,6 @@
             </svg>
     </a>
   </li>
-
-
   <li class="footer-social-item">
     <a class="footer-social-link" href="#" target="_blank" rel="noopener norefferre">
             <svg class="footer-social-icon" width="20" height="20">
@@ -408,8 +406,24 @@
   </li>
 </ul>
 </div>
-      </div>
-    </footer>
+
+    <div class="footer-form">   
+    <h3 class="company-social">Подпишитесь на рассылку</h3>
+    <form name="sign" autocomplete="on">
+    <div class="sign-form"> 
+    <input class="sign-input" type="email" name="email" placeholder="E-mail">
+    <div class="sign-button-text">
+    <button class="hero-button sign-button" type="submit">Подписаться
+      <svg class="sign-icon" width="24" height="24">
+      <use href="./images/sprite.svg#icon-icon-send"></use>
+      </svg>
+    </button>
+    </div> 
+    </div>       
+    </form>
+    </div>
+  </div>
+  </footer>
 
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
@@ -425,7 +439,7 @@
           
           <label for="form-name" class="form-label">Имя</label>
           <div class="client-info">
-            <input type="text" class="form-input" id="form-name" name="user-name" pattern="^[А-Яа-яЁё\s]+$" required autofocus />
+            <input type="text" class="form-input input-required" id="form-name" name="user-name" pattern="^[А-Яа-яЁё\s]+$" required autofocus />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-form-person"></use>
             </svg>
@@ -434,7 +448,7 @@
          
           <label class="form-label" for="form-tel">Телефон</label>
            <div class="client-info">
-          <input class="form-input" type="tel" id="form-tel" name="user-tel" required minlength="10" maxlength="10" pattern="^[ 0-9]+$" />
+          <input class="form-input input-required" type="tel" id="form-tel" name="user-tel" required minlength="10" maxlength="10" pattern="^[ 0-9]+$" />
             <svg class="form-icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-form-tel"></use>
             </svg>
@@ -455,8 +469,8 @@
           </div>
 
           <div class="client-info">
-            <input class="checkbox visually-hidden" type="checkbox" id="checkbox" name="policy" value="Agree" required />
-            <label class="checkbox-label" for="checkbox" >Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></label> 
+            <input class="checkbox visually-hidden" type="checkbox" id="checkbox" name="policy" value="Agree" tabindex="-1" required />
+            <label class="checkbox-label" for="checkbox" tabindex="0">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></label> 
           </div>  
 
           <button class="form-button hero-button" type="submit">Отправить</button>
